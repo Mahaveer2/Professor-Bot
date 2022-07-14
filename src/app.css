@@ -14,7 +14,7 @@ body.dark{
   --primary: rgb(135, 206, 235);
   --img:url('https://ak.picdn.net/shutterstock/videos/1028685524/thumb/7.jpg');
   --secondary:#fff;
-  --gradient:linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  --gradient:linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
   --nav:transparent !important;
 
   background-color: #000;
