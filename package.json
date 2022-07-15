@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"firebase": "^9.8.4"
+		"firebase": "^9.8.4",
+		"svelte-progress-bar": "^3.0.2"
 	}
 }

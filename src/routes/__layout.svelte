@@ -7,13 +7,12 @@
   import NProgress from 'nprogress';
 	import { navigating } from '$app/stores';
 
-	// NProgress css
-	import 'nprogress/nprogress.css';
-
-	NProgress.configure({
+  NProgress.configure({
 		// Full list: https://github.com/rstacruz/nprogress#configuration
 		minimum: 0.16
 	});
+
+  import 'nprogress/nprogress.css';
 
 	$: {
 		if ($navigating) {
@@ -24,6 +23,7 @@
 		}
 	}
 
+
   onMount(() => {
     if(!localStorage.getItem('theme')){
       localStorage.setItem('theme',JSON.stringify({active:true}))
@@ -33,7 +33,6 @@
     
   })
 </script>
-
 <svelte:head>
   <title>MahaveerK</title>
 </svelte:head>

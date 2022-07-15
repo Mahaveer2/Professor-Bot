@@ -11,7 +11,7 @@ body{
 }
 
 body.dark{
-  --primary: rgb(135, 206, 235);
+  --primary: #3bb78f;
   --img:url('https://ak.picdn.net/shutterstock/videos/1028685524/thumb/7.jpg');
   --secondary:#fff;
   --gradient:linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
@@ -35,6 +35,9 @@ footer{
 nav{
   background-color: var(--nav);
   color: var(--secondary);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body.dark .card{
