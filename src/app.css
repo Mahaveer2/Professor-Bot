@@ -8,6 +8,7 @@ body{
   --nav:transparent;
   --img:url('https://i.ytimg.com/vi/Ikd2cL7vF2Y/maxresdefault.jpg');
   --gradient:linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: .2s ease;
 }
 
 body.dark{
@@ -82,6 +83,27 @@ body.dark .card{
 }
 
 @media (max-width: 767px) {
+
+  .active::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: -2px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: var(--gradient);
+    font-weight: bold;
+    height: 2px;
+  }
+
+  nav{
+    width: 90%;
+  }
+
+  .hero{
+    background-size: 150%;
+  }
+
   .navicon {
     width: 1.125em;
     height: .125em;
