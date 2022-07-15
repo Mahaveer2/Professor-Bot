@@ -9,11 +9,11 @@
   </div>
   <PageTransition>
     <div class="mt-[80vh] ml-[12%] flex justify-between items-center">
-      <h1 class="text-4xl text-gradient w-[23%]">Welcome to my portfolio</h1>
-        <p class="w-[50%]">
+      <h1 class="text-4xl text-gradient w-[53%] ">Welcome to my portfolio</h1>
+        <p class="w-[40%] ">
           I am an indie web developer</p>
     </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-[20px] p-5 mt-5">
+      <div class="grid w-[80%] ml-auto mr-auto grid-cols-1 lg:grid-cols-3 gap-[20px] p-5 mt-5">
         <a target="_blank" href="https://mkvchatapp.herokuapp.com/">
         <Card
       title='Python Django Chat app'

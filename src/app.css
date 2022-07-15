@@ -12,7 +12,7 @@ body{
 
 body.dark{
   --primary: #3bb78f;
-  --img:url('https://ak.picdn.net/shutterstock/videos/1028685524/thumb/7.jpg');
+  --img:url('https://i1.wp.com/geeksnewslab.com/wp-content/uploads/2019/07/hello-world.png?fit=640%2C377&ssl=1&resize=1280%2C720');
   --secondary:#fff;
   --gradient:linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
   --nav:transparent !important;
@@ -131,3 +131,78 @@ body.dark .card{
     top: 0;
   }
 }
+
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: var(--gradient);
+
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px var(--gradient), 0 0 5px #29d;
+  opacity: 1.0;
+
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+      -ms-transform: rotate(3deg) translate(0px, -4px);
+          transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+
+  border: solid 2px transparent;
+  border-top-color: var(--primary);
+  border-left-color: var(--primary);
+  border-radius: 50%;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+          animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0%   { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes nprogress-spinner {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
