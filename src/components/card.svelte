@@ -2,9 +2,9 @@
   export let title = '';
   export let img = '';
 </script>
-<div class="card flex justify-center">
-  <div class="rounded-lg shadow-lg bg-white max-w-sm">
-      <img class="rounded-t-lg" src={img} alt="{title}"/>
+<div class="card flex justify-center w-full">
+  <div class="rounded-lg w-full shadow-lg bg-white max-w-sm">
+      <img class="rounded-t-lg w-full" src={img} alt="{title}"/>
       <h5 class="text-black text-xl font-medium mb-2">{title}</h5>
   </div>
 </div>
