@@ -12,7 +12,6 @@
 		minimum: 0.16
 	});
 
-  import 'nprogress/nprogress.css';
 
 	$: {
 		if ($navigating) {
