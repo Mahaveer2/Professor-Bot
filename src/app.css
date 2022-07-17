@@ -12,10 +12,10 @@ body{
 }
 
 body.dark{
-  --primary: #19cf04;
-  --img:url('https://i1.wp.com/geeksnewslab.com/wp-content/uploads/2019/07/hello-world.png?fit=640%2C377&ssl=1&resize=1280%2C720');
+  --primary: #ccc;
+  --img:url('https://www.wallpaperflare.com/static/482/8/981/simple-background-quote-minimalism-text-wallpaper.jpg');
   --secondary:#fff;
-  --gradient:linear-gradient(315deg, #19cf04 0%, #0bab64 74%);
+  --gradient: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
   --nav:transparent !important;
 
   background-color: #000;
@@ -239,3 +239,98 @@ body.dark .card{
   100% { transform: rotate(360deg); }
 }
 
+
+.input{
+  position: relative;
+  width: 100%;
+}
+
+.input input{
+  padding: 10px 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  outline: none;
+  transition: .2s ease;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.input input::placeholder{
+  color: rgba(255,255,255,.9);
+}
+
+input {
+  border-image-source: var(--gradient);
+  border-width: 4pt;
+  border-image-slice: 1;
+}
+
+button.btn{
+  padding: 16px;
+  font-size: 18px;
+  width: 100%;
+  outline: none;
+  margin-top: 20px;
+  color: #fff;
+  background-image: var(--gradient);
+}
+
+.tab{
+  background:var(--gradient);
+  font-size: 22px;
+  transition: .2s ease;
+  cursor: pointer;
+  width: 100%;
+}
+
+.tab:hover{
+  transform:scale( .9);
+}
+
+.splash{
+  height: 100vh;
+  width: 100%;
+  background: var(--img);
+  position: fixed;top: 0;
+  z-index: 2123123;
+  display: flex;
+  transition: .2s ease;
+  justify-content: center;align-items: center;
+  animation: 2.2s linear hide;
+}
+
+@keyframes hide{
+  0%{
+    opacity: 1;
+  }
+
+  70%{
+    opacity:.8;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+.splash .splash-head{
+  font-size: 70px;
+  transition: .2s ease;
+  position: absolute;
+  background: url('https://img.freepik.com/premium-photo/red-calla-lily-flower-dark-green-leaves-botanicalfloral-blossom-exotic-tropical-jungle-rainforest_333216-748.jpg');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: scale 4s ease;
+}
+
+@keyframes scale {
+  0%{
+
+  }
+
+  100%{
+    font-size: 120px;
+  }
+}

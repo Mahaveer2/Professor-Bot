@@ -6,6 +6,7 @@
   import Toggler from "../components/toggler.svelte";
   import NProgress from 'nprogress';
 	import { navigating } from '$app/stores';
+  import start from '../images/videoplayback.mp3';
 
   NProgress.configure({
 		// Full list: https://github.com/rstacruz/nprogress#configuration
@@ -28,14 +29,26 @@
     if(!localStorage.getItem('theme')){
       localStorage.setItem('theme',JSON.stringify({active:true}))
     }
+    var audio = new Audio(start);
+    audio.play()
+    // document.getElementById('start').play();
+
 
     theme.update(n => n = !JSON.parse(localStorage.getItem('theme')).active); 
+
+    setTimeout(() => {
+      document.querySelector('.splash').classList.add('invisible');
+    },1500)
     
   })
 </script>
 <svelte:head>
   <title>MahaveerK</title>
 </svelte:head>
+
+<div class="splash">
+  <h1 class="splash-head">Hello World</h1>
+</div>
 
 <nav class={`nav flex flex-wrap items-center justify-between px-4`}>
   <a href="/">
@@ -50,6 +63,7 @@
   </a>
   <div>
     <Toggler/>
+
   </div>
 
   <input class="menu-btn hidden" type="checkbox" id="menu-btn">
@@ -64,6 +78,10 @@
     
     <li class="border-t md:border-none">
       <a href="/about/" class:active={$page.url.pathname == '/about'} class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</a>
+    </li>
+
+    <li class="border-t md:border-none">
+      <a href="/game/" class:active={$page.url.pathname == '/game'} class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Game</a>
     </li>
     
     <li class="border-t md:border-none">
@@ -85,6 +103,9 @@
       </li>
       <li>
           <a href="/about" class="mr-4 hover:underline md:mr-6">About</a>
+      </li>
+      <li>
+        <a href="/game" class="mr-4 hover:underline md:mr-6">Game</a>
       </li>
       <li>
           <a href="/blog" class="mr-4 hover:underline md:mr-6">Blog</a>

@@ -3,6 +3,9 @@
    import PageTransition from "../components/PageTransition.svelte";
    import logo from '../images/chat.png';
 </script>
+<svelte:head>
+  <title>Home</title>
+</svelte:head>
 
 
   <div class="hero">
