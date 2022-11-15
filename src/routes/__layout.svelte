@@ -62,7 +62,7 @@
     <span class="navicon bg-grey-darkest flex items-center relative"></span>
   </label>
 
-  <ul class="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
+  <ul class="md:relative absolute top-[7%] left-0 w-full  bg-black bg-opacity-5 backdrop-blur-lg transition menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
     <li class="border-t md:border-none">
       <a href="/" class:active={$page.url.pathname == '/'} class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker ">Home</a>
     </li>

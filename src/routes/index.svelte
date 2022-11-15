@@ -16,7 +16,7 @@
         <p class="w-[40%] ">
           I am an indie web developer</p>
     </div>
-      <div class="grid w-[80%] ml-auto mr-auto grid-cols-1 lg:grid-cols-3 gap-[20px] p-5 mt-5 card-grid">
+      <div class="grid w-[80%] ml-auto ml-[6%] mr-auto grid-cols-1 lg:grid-cols-3 gap-[20px] p-5 mt-5 card-grid">
         <a target="_blank" href="https://mkvchatapp.herokuapp.com/">
         <Card
       title='Python Django Chat app'
