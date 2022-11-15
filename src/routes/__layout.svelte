@@ -37,7 +37,7 @@
   })
 </script>
 <svelte:head>
-  <title>MahaveerK</title>
+  <title>Mahaveer Amrani</title>
 </svelte:head>
 
 

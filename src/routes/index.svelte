@@ -4,7 +4,7 @@
    import logo from '../images/chat.png';
 </script>
 <svelte:head>
-  <title>Home</title>
+  <title>Mahaveer Amrani | Home</title>
 </svelte:head>
 
 
