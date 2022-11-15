@@ -28,16 +28,11 @@
     if(!localStorage.getItem('theme')){
       localStorage.setItem('theme',JSON.stringify({active:true}))
     }
-    var audio = new Audio(start);
-    audio.play()
     // document.getElementById('start').play();
 
 
     theme.update(n => n = !JSON.parse(localStorage.getItem('theme')).active); 
 
-    setTimeout(() => {
-      document.querySelector('.splash').classList.add('invisible');
-    },1500)
     
   })
 </script>
@@ -45,9 +40,6 @@
   <title>MahaveerK</title>
 </svelte:head>
 
-<div class="splash">
-  <h1 class="splash-head">Hello World</h1>
-</div>
 
 <nav class={`nav flex flex-wrap items-center justify-between px-4`}>
   <a href="/">

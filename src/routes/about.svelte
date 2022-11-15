@@ -2,7 +2,7 @@
   import PageTransition from "../components/PageTransition.svelte";
 </script>
 <svelte:head>
-  <title>MahaveerK | About</title>
+  <title>Mahaveer Amrani | About</title>
 </svelte:head>
 <PageTransition>
 <h1 class="text-4xl mt-12 text-center text-gradient">About me</h1>
