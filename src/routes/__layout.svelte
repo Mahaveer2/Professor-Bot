@@ -7,6 +7,7 @@
   import NProgress from 'nprogress';
 	import { navigating } from '$app/stores';
   import start from '../images/videoplayback.mp3';
+	import BottomNav from "../components/BottomNav.svelte";
 
   NProgress.configure({
 		// Full list: https://github.com/rstacruz/nprogress#configuration
@@ -103,3 +104,5 @@
       </li>
   </ul>
 </footer>
+
+<BottomNav/>

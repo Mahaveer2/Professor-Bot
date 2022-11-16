@@ -17,7 +17,7 @@ export const lazyLoad = (image, src) => {
           if (image.complete) {                               // check if instantly loaded
               loaded()        
           } else {
-            image.src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif"                                 // REPL hack to apply loading animation
+            image.src="/spinner.svg"                                 // REPL hack to apply loading animation
               image.addEventListener('load', loaded)          // if the image isn't loaded yet, add an event listener
           }
       }

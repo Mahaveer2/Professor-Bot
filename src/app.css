@@ -334,3 +334,24 @@ button.btn{
     font-size: 120px;
   }
 }
+
+.btm-nav{
+  overflow: hidden;
+  position: fixed;
+}
+
+.btm-nav a{
+  padding:20px;
+  width: 100%;
+  backdrop-filter: blur(10%);
+  display: flex;
+  font-size: 20px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.btm-nav a.active{
+  background-color: rgba(0,0,0,.2);
+  color: var(--secondary) !important;
+}
